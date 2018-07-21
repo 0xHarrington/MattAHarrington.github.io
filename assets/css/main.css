@@ -3216,7 +3216,7 @@ input, select, textarea {
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: #f2f2f2;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3300,7 +3300,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			background-color: #f0f0f0;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3329,9 +3329,10 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #f8f8f8;
 		color: #636363;
-		border-radius: 0.25em;
+		border-radius: .45em;
+		box-shadow: 1px 1px 5px 1px #0f0f0f;
 	}
 
 		#main input, #main select, #main textarea {
@@ -3685,14 +3686,14 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
+		padding: 2em 5em 1.5em 5em ;
 		width: calc(100% + 2em);
 		margin: 0em 0em 0em -.5em;
 		text-align: center;
 	}
 
 		#footer > * {
-			width: calc(50% - 2em);
+			width: auto;
 			margin: 0 auto;
 		}
 
