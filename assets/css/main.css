@@ -76,9 +76,9 @@ input, select, textarea {
 /* CUSTOM */
 .avatar {
     vertical-align: middle;
-    width: 130px;
-    height: 130px;
-    border-radius: 85%;
+    width: 150px;
+    height: 150px;
+	border-radius: 25%;
 }
 
 
@@ -110,11 +110,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: #536ADE;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #536ADE 15%, #323545 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #536ADE 15%, #323545 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #536ADE 15%, #323545 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #536ADE 15%, #3c457D 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -131,7 +131,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #536ADE;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -189,7 +189,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 		p.content {
@@ -2386,8 +2386,9 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
+			margin: auto;
+			width: 75%;
+			padding-bottom: 1.5em;
 		}
 
 			.image.fit img {
@@ -2423,7 +2424,7 @@ input, select, textarea {
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding: 0 .25em 0 .25em;
 		}
 
 		ul.alt {
@@ -2490,13 +2491,13 @@ input, select, textarea {
 		display: flex;
 		cursor: default;
 		list-style: none;
-		margin-left: -1em;
-		padding-left: 0;
+		margin: 0 auto;
+		padding: .5em 0em 1em 0em;
 	}
 
 		ul.actions li {
-			padding: 0 0 0 1em;
 			vertical-align: middle;
+			margin: auto;
 		}
 
 		ul.actions.special {
@@ -2609,11 +2610,11 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		text-shadow: none;
 	}
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 0.65em 0 0;
 		}
 
 			ul.icons li:last-child {
@@ -3063,7 +3064,9 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 6em 4em .5em 4em;
+		text-shadow: 1px 1px 6px black;
+		color: #f8f8f8;
 		text-align: center;
 	}
 
@@ -3082,6 +3085,7 @@ input, select, textarea {
 
 			#header.alt h1 {
 				font-size: 3.25em;
+				padding-top: .25em;
 			}
 
 			#header.alt > * {
@@ -3122,7 +3126,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 6em 4em 1em 4em;
 				}
 
 		}
@@ -3134,7 +3138,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 5em 3em 1.5em 3em ;
 				}
 
 		}
@@ -3683,25 +3687,25 @@ input, select, textarea {
 		flex-wrap: wrap;
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
-		margin: 0em 0em 0em -2em;
+		margin: 0em 0em 0em -.5em;
+		text-align: center;
 	}
 
 		#footer > * {
 			width: calc(50% - 2em);
-			margin-left: 2em;
+			margin: 0 auto;
 		}
 
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
-			text-align: center;
+			margin: 0 auto;
 		}
-
+/* 
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 4em 4em 2em 4em ;
+				padding: 1.5em 4em 1em 4em;
 			}
 
 		}
@@ -3719,11 +3723,6 @@ input, select, textarea {
 					width: 100%;
 					margin-left: 0;
 					margin-bottom: 3em;
-				}
-
-				#footer .copyright {
-					text-align: left;
-					margin-top: 1.5em;
 				}
 
 		}
@@ -3750,7 +3749,7 @@ input, select, textarea {
 				padding: 2.5em 1em 0.5em 1em ;
 			}
 
-		}
+		} */
 
 /* Wrapper */
 
