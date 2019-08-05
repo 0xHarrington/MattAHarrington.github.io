@@ -42,29 +42,30 @@
         });
       });
     </script>
+
+
     <div class="menuAc">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <div class="menuMobil">
       {% include nav-home.html %}
     </div>
-    <div class="baslik">
-      {{ site.title }}
-    </div>
-
-
-
-    <div class="orta">
-      <div class="ortala">
-        <div class="resim">
-          <img alt="{{ site.title }}" src="{{ site.url }}/{{ site.picture }}">
+    <div class="ust">
+      <div class="ortalaAna">
+        <div class="baslikAna">
+          {{ site.title }}
         </div>
+
         <div class="pc">
           {% include nav.html %}
         </div>
-        <div class="aciklamalar">
-          {{ site.description }}
-        </div>
+      </div>
+    </div>
+
+
+    <div class="ortalaAna">
+      <div class="yazilar">
+        {% include aboutme.html %}
       </div>
     </div>
 
