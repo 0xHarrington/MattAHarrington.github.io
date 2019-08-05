@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  {% include head-home.html %}
   <body>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -15,7 +15,7 @@
             $('.footer').css({
               'filter'         : 'blur(5px)'
             });
-            $('.yazilar').css({
+            $('.programlar').css({
               'filter'         : 'blur(5px)'
             });
             $('.ust').css({
@@ -30,7 +30,7 @@
             $('.footer').css({
               'filter'         : 'blur(0px)'
             });
-            $('.yazilar').css({
+            $('.programlar').css({
               'filter'         : 'blur(0px)'
             });
             $('.ust').css({
@@ -48,35 +48,28 @@
     <div class="menuMobil">
       {% include nav-home.html %}
     </div>
-    <div class="ust">
-      <div class="ortalaAna">
-        <div class="baslikAna">
-          {{ site.title }}
-        </div>
+    <div class="baslik">
+      {{ site.title }}
+    </div>
 
+
+
+    <div class="orta">
+      <div class="ortala">
+        <div class="resim">
+          <img alt="{{ site.title }}" src="{{ site.url }}/{{ site.picture }}">
+        </div>
         <div class="pc">
           {% include nav.html %}
         </div>
-      </div>
-    </div>
-    <div class="ortalaAna">
-      <div class="yazilar">
-        <div class="yazi">
-          <div class="ustr">
-            <h2>{{ page.title }}</h2>
-            <div class="yazibilgisi">
-              {{ page.date | date_to_string }} tarihinde yayınlandı.
-            </div>
-          </div>
-          <hr>
-          <div class="content">
-            {{ content }}
-          </div>
+        <div class="aciklamalar">
+          {{ site.description }}
         </div>
-        {% include scripts.html %}
-        {% include disqus_comments.html %}
       </div>
     </div>
-    {% include footer.html %}
+
+
+
+    {% include social-links.html %}
   </body>
 </html>

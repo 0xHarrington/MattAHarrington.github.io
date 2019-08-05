@@ -3,7 +3,7 @@
           {% for link in site.data.navigation %}
             {% if link.url contains 'http' %}
                 {% assign domain = '' %}
-                {% else %}
+              {% else %}
                 {% assign domain = site.url %}
             {% endif %}
             <li>
