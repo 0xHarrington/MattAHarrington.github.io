@@ -45,11 +45,14 @@
     <div class="menuAc">
       <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
+
     <div class="menuMobil">
       {% include nav-home.html %}
     </div>
+
     <div class="ust">
       <div class="ortalaAna">
+
         <div class="baslikAna">
           {{ site.title }}
         </div>
@@ -57,13 +60,18 @@
         <div class="pc">
           {% include nav.html %}
         </div>
+
       </div>
     </div>
+
+
     <div class="ortalaAna">
       <div class="yazilar">
         <div class="yazi">
           <div class="ustr">
+
             <h2>{{ page.title }}</h2>
+
           </div>
           <hr>
           <div class="content">
@@ -71,9 +79,10 @@
           </div>
         </div>
         {% include scripts.html %}
-        {% include disqus_comments.html %}
       </div>
     </div>
+
+
     {% include footer.html %}
   </body>
 </html>

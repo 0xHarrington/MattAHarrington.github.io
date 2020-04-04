@@ -66,10 +66,13 @@
       <div class="yazilar">
         <div class="yazi">
           <div class="ustr">
+
             <h2>{{ page.title }}</h2>
+
             <div class="yazibilgisi">
               {{ page.date | date_to_string }}
             </div>
+
           </div>
           <hr>
           <div class="content">
@@ -77,7 +80,6 @@
           </div>
         </div>
         {% include scripts.html %}
-        {% include disqus_comments.html %}
       </div>
     </div>
 
