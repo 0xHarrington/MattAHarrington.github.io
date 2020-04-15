@@ -1,11 +1,10 @@
 # Matt Harrington's Personal Website
 
+Welcome to the source code for my personal website! I've leveraged the Jekyll framework to create a static site for use with Github Pages. Its theme is my own, taking inspiration from the ![gruvbox](https://github.com/morhetz/gruvbox) colorscheme.
 
-**To-Do's:**
-
-- Transfer content from old page to the new
-- Add Projects
-  - A life in numbers
-  - CV cubed
-  - GAN Strats
-- Prepare / Start blog posts
+**Coming Blog Posts:**
+- Senior Thesis
+- Every Hour
+- dotfiles
+- Colophon (credit to ![Jim Ramsden](http://jimramsden.com))
+- COS HW
