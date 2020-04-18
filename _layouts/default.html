@@ -1,26 +1,33 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
   <!-- Include the fancy meta in the header -->
   <head>
-    <title>{{ page.title }}</title>
+    <title>{{ site.title }}</title>
     <!-- link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <!-- link to Bulma Requirements -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
+
   <body>
-    <div class="container">
-    
+
+    <!-- Include Spicy Content -->
     {{ content }}
-    
-    </div><!-- /.container -->
 
     <!-- Include Footer w/ resume and social links -->
+    <section class="section is-medium">
     <!-- <footer>
        -   <ul>
        -     <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
        -     <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
        -   </ul>
        - </footer> -->
+    </section>
+
   </body>
 </html>
 

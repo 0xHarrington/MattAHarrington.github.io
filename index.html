@@ -6,29 +6,51 @@ title: Home
 <div class='container'>
 
   <!-- Hero greeting -->
-  <div>
-    <h1> Logical Mind | Playful Heart </h1>
-    <h3> Current Tech Consultant at Joseki Technologies </h3>
-  </div>
+  <section class="hero is-large is-link">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title"> 
+          {{ site.hero }}
+        </h1>
+        <h2 class="subtitle">
+          Current Tech Consultant at Joseki Technologies 
+        </h2>
+      </div>
+    </div>
+  </section>
 
   <!-- More succinct blurb w/ face -->
-  <div>
-    <div>
-      <img src="assets/img/headshot.jpg"/>
-    </div>
+  <section class="section is-medium">
+    <div class="columns">
+      <div class="column">
+        <img src={{site.picture}} />
+      </div>
 
-    <div>
-      <p> Hi, I'm Matt! I'm member of the Montassori class of '99, and Princeton class of '19. I spend my days working towards my goals, and making sure my brother doesn't forget his. </p>
+      <div class="column">
+        <p> 
+          <strong>Hi, I'm Matt!</strong> 
+          <br>
+          I'm a member of the Princeton class of '19, and Montessori class of '01. I spend my days working towards my goals, and making sure my brother doesn't forget his.
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Things I've done so far -->
-  <div>
-    <ul>
-      <li>Card item w/ hover css details, or golden ratio side</li>
-      <li>Card item 2</li>
-    <ul>
-  </div>
+  <section class="section is-medium">
+    <div class="columns">
+      <div class="column">
+        <div class="box">
+          <p> Past Experience 1</p>
+        </div>
+      </div>
 
+      <div class="column">
+        <div class="box">
+          <p> Past Experience 2</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
