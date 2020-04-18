@@ -1,0 +1,28 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Using Bulma and Jekyll",
+  "main": "_sass/main.scss",
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve --livereload",
+    "css-build": "node-sass --omit-source-map-url _sass/main.scss assets/css/main_output.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattAHarrington/MattAHarrington.github.io.git"
+  },
+  "author": "Matt Harrington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattAHarrington/MattAHarrington.github.io/issues"
+  },
+  "homepage": "https://github.com/MattAHarrington/MattAHarrington.github.io#readme"
+}
