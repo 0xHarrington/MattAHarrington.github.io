@@ -10,7 +10,6 @@ url:            https://matt-harrington.com
 # Github Pages
 lsi: false
 safe: true
-source: /
 incremental: false
 highlighter: rouge
 gist:
