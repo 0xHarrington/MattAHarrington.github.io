@@ -7,18 +7,30 @@ locale:         en_US
 url:            https://matt-harrington.com
 
 
+# Github Pages
+lsi: false
+safe: true
+source: /
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+
+
 # Jekyll
 permalink:      /:title/
 markdown:       kramdown
 highlighter:    rouge
 kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
 sass:
-  sass_dir: assets/css/
+  sass_dir: _sass
   style: compressed
 
 # Social
