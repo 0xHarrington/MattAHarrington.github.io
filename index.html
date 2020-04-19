@@ -3,30 +3,29 @@ layout: default
 title: Home
 ---
 
-<div class='container'>
-
-  <!-- Hero greeting -->
-  <section class="hero is-large is-link">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title"> 
-          {{ site.hero }}
-        </h1>
-        <h2 class="subtitle">
-          Current Tech Consultant at Joseki Technologies 
-        </h2>
-      </div>
+<!-- Hero greeting -->
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title"> 
+        {{ site.hero }}
+      </h1>
+      <h2 class="subtitle">
+        Current Tech Consultant at Joseki Technologies 
+      </h2>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- More succinct blurb w/ face -->
-  <section class="section is-medium">
+<!-- More succinct blurb w/ face -->
+<section class="section is-primary">
+  <div class="container">
     <div class="columns">
       <div class="column">
-        <img src={{site.picture}} />
+        <img src={{site.picture}} class="avatar" />
       </div>
 
-      <div class="column">
+      <div class="column content">
         <p> 
           <strong>Hi, I'm Matt!</strong> 
           <br>
@@ -34,23 +33,45 @@ title: Home
         </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Things I've done so far -->
-  <section class="section is-medium">
-    <div class="columns">
-      <div class="column">
-        <div class="box">
-          <p> Past Experience 1</p>
-        </div>
-      </div>
+<!-- Things I've done so far -->
+<section class="section is-primary">
+  <div class="columns"> 
 
-      <div class="column">
-        <div class="box">
-          <p> Past Experience 2</p>
+    <!-- {% for experience in site.staff_members %}
+       -   <h2>{{ staff_member.name }} - {{ staff_member.position }}</h2>
+       -   <p>{{ staff_member.content | markdownify }}</p>
+       - {% endfor %} -->
+
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+          </figure>
         </div>
+        <div class="card-content">
+
+          <div class="content">
+            Past Experience 1
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="box"> -->
+      <!--   <p> </p> -->
+      <!-- </div> -->
+    </div>
+
+    <div class="column">
+      <div class="box">
+        <p> Past Experience 2</p>
       </div>
     </div>
-  </section>
-
-</div>
+  </div>
+</section>
