@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "Using Bulma and Jekyll",
-  "main": "_sass/main.scss",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "bulma": "^0.8.2",
