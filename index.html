@@ -22,7 +22,7 @@ title: Home
   <div class="container">
     <div class="columns">
       <div class="column">
-        <img src={{site.picture}} class="avatar" />
+        <img src={{site.picture}} class="is-rounded" />
       </div>
 
       <div class="column content">
@@ -44,20 +44,20 @@ title: Home
     <div class="column">
       <div class="card">
         <div class="card-image">
-          <figure class="image is-4by3">
+          <figure class="image is-square">
             <img src={{experience.image}} alt="Placeholder image">
           </figure>
         </div>
         <div class="card-content">
           <div class="content">
-            <h2>{{ experience.name }} - {{ staff_member.position }}</h2>
-            <p>{{ staff_member.content | markdownify }}</p>
-            <br>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            <h2>{{ experience.name }} - {{ experience.role }}</h2>
+            <p>{{ experience.content | markdownify }}</p>
+            <time datetime={{experience.starttime}}>Summer 2018</time>
           </div>
         </div>
       </div>
-      {% endfor %}
+    </div>
+    {% endfor %}
 
     <div class="column">
       <div class="box">

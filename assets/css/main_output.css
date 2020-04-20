@@ -1046,7 +1046,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   position: relative !important; }
 
 .input, .textarea, .select select {
-  background-color: white;
+  background-color: #1d2021;
   border-color: #dbdbdb;
   border-radius: 4px;
   color: #fbf1c7; }
@@ -3511,7 +3511,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
       max-width: 1344px; } }
 
 .box {
-  background-color: white;
+  background-color: #1d2021;
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #a89984;
@@ -3740,7 +3740,7 @@ a.box:active {
     font-size: 0.75rem; }
 
 .card {
-  background-color: white;
+  background-color: #1d2021;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   color: #a89984;
   max-width: 100%;
