@@ -4,7 +4,7 @@ description:    "Matt Harrington's Personal Website"
 hero:           "Logical Mind | Playful Heart"
 picture:        'assets/img/headshot.jpg'
 locale:         en_US
-url:            https://matt-harrington.com
+url:            https://matt-harrington.com #the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Github Pages
@@ -44,6 +44,10 @@ linkedin: in/matt-harrington
 #youtube: username
 #soundcloud: username
 
+
+# Collections
+collections:
+ - experiences
 
 # Comments
 disqus_shortname: alperenbozkurt-net
