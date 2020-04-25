@@ -7,12 +7,34 @@ title: Home
 <section class="hero is-medium ">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title"> 
-        {{ site.hero }}
-      </h1>
-      <h2 class="subtitle">
-        Current Tech Consultant at Joseki Technologies 
-      </h2>
+
+      <div class="level">
+
+      <div class="level-left">
+        <div class="level-item">
+          <figure class="image is-128x128">
+            <img class="is-rounded" src={{site.picture}} />
+          </figure>
+        </div>
+
+        <div class="level-item"> 
+          <ul>
+            <li>
+              <h1 class="title"> 
+                {{ site.hero }}
+              </h1>
+            <li>
+            </li>
+              <h2 class="subtitle">
+                Current Tech Consultant at Joseki Technologies 
+              </h2>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -20,33 +42,32 @@ title: Home
 <!-- More succinct blurb w/ face -->
 <section class="section has-background-primary">
   <div class="container">
-    <div class="columns">
-      <div class="column">
-        <img src={{site.picture}} class="is-rounded" />
-      </div>
 
-      <div class="column content">
+      <div class="content">
         <p> 
           <strong>Hi, I'm Matt!</strong> 
           <br>
           I'm a member of the Princeton class of '19, and Montessori class of '01. I spend my days working towards my goals, and making sure my brother doesn't forget his.
         </p>
-      </div>
     </div>
   </div>
 </section>
 
 <!-- Things I've done so far -->
 <section class="section ">
-  <div class="columns"> 
+  <div class="columns is-tablet is-multiline is-centered"> 
 
     {% for experience in site.experiences %}
     <div class="column">
       <div class="card">
-        <div class="card-image">
-          <figure class="image is-square">
-            <img src={{experience.image}} alt="Placeholder image">
-          </figure>
+        <div class="columns is-centered">
+          <div class="column" style="padding-top:0px;">
+            <div class="card-image">
+              <figure class="image is-square">
+                <img src={{experience.image}} alt="Placeholder image">
+              </figure>
+            </div>
+          </div>
         </div>
         <div class="card-content">
           <div class="content">
@@ -59,11 +80,4 @@ title: Home
     </div>
     {% endfor %}
 
-    <div class="column">
-      <div class="box">
-        <p> Past Experience 2</p>
-      </div>
-    </div>
-
-  </div>
 </section>

@@ -49,9 +49,9 @@ $light-gray: #a89984;
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 
-$body-background-color: $bg0;
+$body-background-color: $bg0-soft;
 $scheme-main: $bg0-hard;
-$primary: $bg0-soft;
+$primary: $bg0;
 $text-strong: $fg0;
 $text: $fg4;
 
@@ -78,7 +78,10 @@ $text: $fg4;
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
 @import "../node_modules/bulma/sass/elements/box.sass";
 @import "../node_modules/bulma/sass/elements/content.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/level.sass";
 @import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/components/media.sass";
