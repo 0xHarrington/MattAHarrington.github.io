@@ -1,10 +1,11 @@
 ---
-company: Princeton University
+name: Princeton University
 location: Wilson College
 role: Residential College Advisor
 image: "assets/img/nassau-min.jpg"
 timeframe: Junior & Senior Years
 starttime: "2017-8-27"
+link: "https://wilsoncollege.princeton.edu"
 ---
 
 - Lived alongside first-and-second-year students in the dorms, available as an all-purpose advisor.
