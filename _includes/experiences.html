@@ -1,0 +1,35 @@
+<section class="section ">
+  <div class="columns">
+    <div class="columm">
+      <h1 class="title"> 
+        Things I've Done so far:
+      </h1>
+    </div>
+  </div>
+  <div class="columns is-tablet is-multiline is-centered"> 
+
+    {% for experience in site.experiences %}
+    <div class="column is-half-tablet">
+      <div class="box">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-128x128">
+              <a href={{experience.link}} target="_blank">
+                <img src={{experience.image}}>
+              </a>
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <h4>{{ experience.name }}</h4>
+              <h6>{{ experience.role }}</h6>
+              <p>{{ experience.content | markdownify }}</p>
+            </div>
+            <time datetime={{experience.starttime}}>{{experience.timeframe}}</time>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+</section>

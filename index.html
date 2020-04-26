@@ -7,45 +7,40 @@ title: Home
 <section class="hero is-medium ">
   <div class="hero-body">
     <div class="container">
-
       <div class="level">
-
-      <div class="level-left">
-        <div class="level-item">
-          <figure class="image is-128x128">
-            <img class="is-rounded" src={{site.picture}} />
-          </figure>
+        <div class="level-left">
+          <div class="level-item">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src={{site.picture}} />
+            </figure>
+          </div>
+          <div class="level-item"> 
+            <ul>
+              <li>
+                <h1 class="title is-size-3 has-text-danger"> 
+                  {{ site.hero }}
+                </h1>
+              <li>
+              </li>
+                <h2 class="subtitle is-size-4 has-text-danger">
+                  Tech Consultant at Joseki Technologies 
+                </h2>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="level-item"> 
-          <ul>
-            <li>
-              <h1 class="title"> 
-                {{ site.hero }}
-              </h1>
-            <li>
-            </li>
-              <h2 class="subtitle">
-                Current Tech Consultant at Joseki Technologies 
-              </h2>
-            </li>
-          </ul>
-        </div>
-
       </div>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- More succinct blurb w/ face -->
+<!-- Longer Blurb about myself -->
 <section class="section has-background-primary">
   <div class="container">
-
-      <div class="content">
-        <p> 
-          <strong>Hi, I'm Matt!</strong> 
+    <div class="columns has-text-centered">
+      <div class="column">
+        <p class="is-size-5"> 
+          <strong class="is-size-4 has-text-danger">Hi, I'm Matt!</strong> 
           <br>
           I'm a member of the Princeton class of '19, and Montessori class of '01. I spend my days working towards my goals, and making sure my brother doesn't forget his.
         </p>
@@ -54,32 +49,4 @@ title: Home
 </section>
 
 <!-- Things I've done so far -->
-<section class="section ">
-  <div class="columns is-tablet is-multiline is-centered"> 
-
-    {% for experience in site.experiences %}
-    <div class="column">
-      <div class="card">
-        <div class="columns is-centered">
-          <div class="column" style="padding-top:0px;">
-            <div class="card-image">
-              <figure class="image is-square">
-                <a href={{experience.link}} target="_blank">
-                  <img src={{experience.image}} alt="Placeholder image">
-                </a>
-              </figure>
-            </div>
-          </div>
-        </div>
-        <div class="card-content">
-          <div class="content">
-            <h2>{{ experience.name }} - {{ experience.role }}</h2>
-            <p>{{ experience.content | markdownify }}</p>
-            <time datetime={{experience.starttime}}>{{experience.timeframe}}</time>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-
-</section>
+{% include experiences.html %}

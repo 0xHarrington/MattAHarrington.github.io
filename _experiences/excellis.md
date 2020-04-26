@@ -8,7 +8,7 @@ starttime: "2019-7-08"
 link: "https://www.excellishealth.com/"
 ---
 
-Delivered industry-leading Health Care consulting across such topics as
+Delivered industry-leading consulting across such topics as
 - Compliance with upcoming Legislation
 - SAP/ERP Technology Integration
 - Project and Program Management

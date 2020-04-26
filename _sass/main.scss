@@ -46,29 +46,21 @@ $light-gray: #a89984;
 // Update Bulma's variables
 // ------------------------------------
 
-// Update Bulma's global variables
+// UI Layout
 $family-sans-serif: "Nunito", sans-serif;
+$section-padding: 5rem 10rem;
+$hero-body-padding-medium: $section-padding;
 
-$body-background-color: $bg0-soft;
-$scheme-main: $bg0-hard;
-$primary: $bg0;
-$text-strong: $fg0;
-$text: $fg4;
+// UI Color
+$body-background-color: $bg0-hard;
+$danger: $light-orange;
+$warning: $light-yellow;
+$primary: $bg1;
+$scheme-main: $fg0;
 
-/* $grey-dark: $brown;
- * $grey-light: $beige-light;
- * $primary: $purple;
- * $link: $pink;
- * $widescreen-enabled: false;
- * $fullhd-enabled: false; */
-
-
-// Update some of Bulma's component variables
-
-/* $control-border-width: 2px;
- * $input-border-color: transparent;
- * $input-shadow: none; */
-
+// Text Color
+$text-strong: $dark-blue;
+$text: $light-blue;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
