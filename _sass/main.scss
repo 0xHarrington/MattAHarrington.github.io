@@ -50,6 +50,7 @@ $light-gray: #a89984;
 $family-sans-serif: "Nunito", sans-serif;
 $section-padding: 5rem 10rem;
 $hero-body-padding-medium: $section-padding;
+$footer-padding: 2rem;
 
 // UI Color
 $body-background-color: $bg0-hard;
@@ -68,6 +69,7 @@ $text: $light-blue;
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/footer.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/image.sass";

@@ -1,15 +1,15 @@
-<section class="section ">
-  <div class="columns">
+<section class="section">
+  <div class="columns has-text-centered">
     <div class="columm">
-      <h1 class="title"> 
-        Things I've Done so far:
-      </h1>
+      <p class="title">
+        What I've Done
+      </p>
     </div>
   </div>
   <div class="columns is-tablet is-multiline is-centered"> 
 
     {% for experience in site.experiences %}
-    <div class="column is-half-tablet">
+    <div class="column is-full-tablet is-half-widescreen">
       <div class="box">
         <div class="media">
           <div class="media-left">
@@ -21,8 +21,8 @@
           </div>
           <div class="media-content">
             <div class="content">
-              <h4>{{ experience.name }}</h4>
-              <h6>{{ experience.role }}</h6>
+              <Strong >{{ experience.name }}</Strong>
+              <p class="">{{ experience.role }}</p>
               <p>{{ experience.content | markdownify }}</p>
             </div>
             <time datetime={{experience.starttime}}>{{experience.timeframe}}</time>

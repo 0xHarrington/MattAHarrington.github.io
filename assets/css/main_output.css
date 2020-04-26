@@ -3483,6 +3483,10 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   flex-shrink: 0;
   padding: 3rem 1.5rem; }
 
+.footer {
+  background-color: #fafafa;
+  padding: 2rem; }
+
 .section {
   padding: 5rem 10rem; }
   @media screen and (min-width: 1024px) {
