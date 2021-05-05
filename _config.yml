@@ -1,7 +1,8 @@
 # Site
 title:          "Matt Harrington"
 description:    "Matt Harrington's Personal Website"
-hero:           "Logical Mind | Playful Heart"
+hero:           "CS Masters Student at Virginia Tech"
+subhero:        "Making machines learn, one epoch at a time"
 picture:        'assets/img/headshot.jpg'
 locale:         en_US
 url:            https://matt-harrington.com #the base hostname & protocol for your site, e.g. http://example.com

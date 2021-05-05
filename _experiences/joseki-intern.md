@@ -1,6 +1,6 @@
 ---
 name: Joseki Technologies
-location: Remote - Weehawken, NJ
+location: Remote
 role: Summer Project Intern
 image: "assets/img/go-board-min.jpg"
 timeframe: Summer 2018

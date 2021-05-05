@@ -8,7 +8,8 @@
   </div>
   <div class="columns is-tablet is-multiline is-centered"> 
 
-    {% for experience in site.experiences %}
+    {% assign exp = site.experiences | sort: 'starttime' | reverse %}
+    {% for experience in exp %}
     <div class="column is-full-tablet is-half-widescreen">
       <div class="box">
         <div class="media">
@@ -21,8 +22,8 @@
           </div>
           <div class="media-content">
             <div class="content">
-              <Strong >{{ experience.name }}</Strong>
-              <p class="">{{ experience.role }}</p>
+              <Strong >{{ experience.role }}</Strong>
+              <p class="">{{ experience.name }}</p>
               <p>{{ experience.content | markdownify }}</p>
             </div>
             <time datetime={{experience.starttime}}>{{experience.timeframe}}</time>
